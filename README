@@ -1,0 +1,14 @@
+programming task by Efecte
+Write a python program that asks the user to give a number as an input, 
+and based on that number forms a multiplication table
+For example, if the input number is 3, the program prints:
+
+1 2 3
+
+2 4 6
+
+3 6 9
+
+ 
+
+Consider also how to handle the exception case where the given input is not an integer
