@@ -35,6 +35,7 @@ def readin_integer(arguments):
     except ValueError:
         print("Input number N = %s is not an integer"%N_input)
         sys.exit(0)
+
 def generate_mult_table(N):
     table = np.zeros((N, N), dtype=int)
     for i in range(N):

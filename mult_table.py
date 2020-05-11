@@ -15,9 +15,11 @@ print("Multiplication table for N = %i"%N)
 # main program starts here
 table = generate_mult_table(N)
 
+#Uncomment next line if pandas is unavailable 
+#print(table)
 
 #printing the table with pandas module
-import pandas
-df = pandas.DataFrame(table)
+from pandas import DataFrame
+df = DataFrame(table)
 # print to a terminal
 print(df.to_string(index = False, header=False))

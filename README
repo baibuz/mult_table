@@ -15,10 +15,15 @@ Consider also how to handle the exception case where the given input is not an i
 
 Instructions
 -python 3 recomended for running the program
--program requires pandas and numpy modules installed
+-program requires pandas and numpy modules, install with pip3:
+pip3 install pandas
+pip3 install numpy
+-for more on pandas see https://pandas.pydata.org/
+-(not recommended) if pandas is unavailable, uncomment print(table) line in mult_table.py, comment all the lines afterwards
+
+ 
 usage:
 python3 
 python3 mult_table.py your_number
 for help message:
 python3 mult_table.py help
-
