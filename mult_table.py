@@ -16,7 +16,7 @@ if "help" in sys.argv:
     print("The program outputs a multiplication table up to the input number. Usage: ")
     print("python3 %s N "%sys.argv[0])
     print("where N is an integer number")
-    print("pandas is 1 or 0, specifies if pandas module is used for printing the table")
+    sys.exit(0)
 else:
     if len(sys.argv)<2:
         # check if number provided
@@ -39,10 +39,9 @@ for i in range(N):
     for j in range(N):
         # assigning multiplication table
         table[i,j] = (i+1)*(j+1)
-        #print (' '.join(map(str, table[i,:]))) # for printing is pandas not available. not recomended!
 
 #printing the table with pandas module
 import pandas
 df = pandas.DataFrame(table)
+# print to a terminal
 print(df.to_string(index = False, header=False))
-
